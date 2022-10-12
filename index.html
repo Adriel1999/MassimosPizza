@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/Logo.jpg">
+  <title>Massimos</title>
+  <!--Dependencias-->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <!--banner-->
+  <section id="banner">
+    <div class="bg-color">
+      <header id="header">
+        <div class="container">
+          <div id="mySidenav" class="sidenav">
+            <!-- Creracion de la Barra de navegacion -->
+            <!-- javascript Para que salga una x en la barra y poder cerrarlo. -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about">Informacion</a>
+            <a href="./menu.html" target="_blank">Menu</a>
+            <a href="#contact">Reservaciones</a>
+            <a href="./PizzayVinos.html" target="_blank">Pizzas y vinos</a>
+            <a href="./Decoraciones.html" target="_blank">Decoraciones</a>
+          </div>
+          <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+        </div>
+      </header>
+      <!-- creacion del titulo -->
+      <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+            <h1 class="logo-name">"Massimos Pizza"</h1>
+            <h2>Conoce Nuestras Pizzas Artesanales a la Leña </h2>
+            <p>Siempre con los Mejores Ingredientes de Calidad </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / banner -->
+  <!--Informacion-->
+  <section id="about" class="section-padding">
+    <!-- clases para ajustar el contendio con bootstrap en el centro y que no halla un scrooll con el maus -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center marb-35">
+          <h1 class="header-h">Que encontraras en Massimos Pizza</h1>
+          <p class="header-p">Un lugar Magico en el cual pudes pasar un buen momento ya que contamos con un lugar
+            Rustico con musica tranquila tipo barroco,
+            <br>una peculiaridad es que esta al aire libre para que te sientas mas relajado y disfrutar de una buena
+            charla con un buen vino
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="col-md-6 col-sm-6">
+            <div class="about-info">
+              <h2 class="heading">Buena combinacion de Vinos con pizza</h2>
+              <p>Para ocasiones especiales contamos con venta de vinos desde preparados hasta botellas o simplemente por
+                copas,
+                <br> A continuacion algunas cosas que son parte fundamental de Massimos:
+              </p>
+              <!-- creacion de lista en seccion(informacion) -->
+              <div class="details-list">
+                <ul>
+                  <li><i class="fa fa-check"></i>Buenos Precios</li>
+                  <li><i class="fa fa-check"></i>Comida Delisiosa</li>
+                  <li><i class="fa fa-check"></i>Musica Agradable</li>
+                  <li><i class="fa fa-check"></i>Comodidad en el Lugar</li>
+                  <li><i class="fa fa-check"></i>Buena Atencion al Cliente</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <img src="./img/Pollo4QuesosNueva.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <video src="./img/274091446_306874764840143_9033241818770036349_n.mp4" width="640" height="480" controls
+              autoplay muted loop></video>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  <!--/Informacion-->
+  <!------------------------------------------------ Reservar Mesa --------------------------->
+  <section id="contact" class="section-padding"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="header-h">Reserve Su Mesa</h1>
+          <p class="header-p">Le podemos Reservar su mesa de una mejor manera para alguna ocacion especial o simplemente
+            para visitarnos
+            <br>a Massimos Pizza su casa.
+          </p>
+        </div>
+      </div>
+      <!-- clases de bosstrap para buena identacion -->
+      <div class="row msg-row">
+        <div class="col-md-4 col-sm-4 mr-15">
+          <div class="media-2">
+            <!-- creacion de icono de numero telefonico -->
+            <div class="media-left">
+              <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
+            </div>
+            <div class="media-body">
+              <h4 class="dark-blue regular">Numero Telefonico</h4>
+              <p class="light-blue regular alt-p">+52 3311449783</p>
+            </div>
+          </div>
+          <!-- creacion de icono de Horario -->
+          <div class="media-2">
+            <div class="media-left">
+              <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
+            </div>
+            <div class="media-body">
+              <h4 class="dark-blue regular">Horario de servicio</h4>
+              <p class="light-blue regular alt-p"> Lunes a Domingo 2:00 pm - 11:00 pm</p>
+            </div>
+          </div>
+        </div>
+        <!---------------------------------- En esta seccion empezamos con la creacion del formulario para la Reservacion -->
+        <div class="col-md-8 col-sm-8">
+          <form> 
+            <!-- Pedir Nombre -->
+            <div class="col-md-6 col-sm-6 contact-form pad-form">
+              <div class="form-group label-floating is-empty">
+                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu Nombre Completo"
+                required="Campo Necesario" />
+              </div>
+            </div>
+            <!-- Pedir fecha -->
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="date" class="form-control label-floating is-empty" name="fecha" id="fecha"
+                  placeholder="fecha" required="Campo Necesario"  />
+              </div>
+            </div>
+            <!-- Pedir Email -->
+            <div class="col-md-6 col-sm-6 contact-form pad-form">
+              <div class="form-group">
+                <input type="email" class="form-control label-floating is-empty" name="email" id="email"
+                  placeholder="Tu Correo Electronico" />
+              </div>
+            </div>
+            <!-- Pedir La hora de Reservacion -->
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="time" class="form-control label-floating is-empty" name="hora" id="hora" placeholder="hora"
+                 required="Campo Necesario"  />
+              </div>
+            </div>
+            <!-- Pedir Telefono -->
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control label-floating is-empty" name="telefono" id="telefono"
+                required="Campo Necesario" placeholder="Telefono" />
+              </div>
+            </div>
+            <!-- Pedir El Numero de personas -->
+            <div class="col-md-6 col-sm-6 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control label-floating is-empty" name="personas" id="personas"
+                required="Campo Necesario" placeholder="Numero de Personas" />
+              </div>
+            </div>
+            <!-- Pedir Algun Mensaje -->
+            <div class="col-md-12 contact-form">
+              <div class="form-group label-floating is-empty">
+                <!-- con la etiqueta textarea podemos modificar el tamaño de la caja de texto -->
+                <textarea class="form-control" name="Mensaje" id="Mensaje" rows="5" rows="3"
+                  placeholder="Que tipo de Reservacion (Romantica,Fiesta,Omitir)"></textarea>
+              </div>
+            </div>
+            <!-- creacion de boton de reservar -->
+            <div class="col-md-offset-3 col-md-6 text-center">
+                <button class="contacts-btn" id="btn2">Reserve su Meza</button>
+            </div> 
+          </form> 
+          <!-- <div class="col-md-12 btnpad">
+            <div class="contacts-btn-pad">
+              <button class="contacts-btn" id="btn2" >Reserve Su Mesa</button>
+            </div>
+          </div> -->
+  </section> 
+
+<div class="col-md-12 text-center">
+    <div >
+      <h1 class="header-h">Donde puede encontrarnos</h1>
+        <p class="header-p">Salga de la rutina y venga a visitarnos en un lugar magico puede acompañarnos de una mejor manera para alguna ocacion especial o simplemente
+          para visitarnos
+          <br>a Massimos Pizza su casa.
+        </p>
+    </div>
+</div>
+  <!---------------------------------- En esta seccion creamos el Gps----------------->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.758228744488!2d-103.44738238580774!3d20.47512101182476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f538c7608086f%3A0x5d39b012155ae57f!2sMassimo%20Pizza!5e0!3m2!1ses!2smx!4v1655429098625!5m2!1ses!2smx" width="850" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  <!-- footer -->
+  <footer class="footer text-center">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6 text-center">
+          <div class="widget">
+            <h4 class="widget-title">Yagami</h4>
+            <address>Tlajomulco de Zuñiga<br>Cima del solo #3</address>
+            <div class="social-list">
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <p class="copyright clear-float">
+              © Inc.Sistemas 6AS All Rights Reserved
+            <div class="credits">
+              Hecho por <a href="https://www.facebook.com/adrielodavid.ramirezramirez.3" target="_blank">Adriel</a>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
+
+  <!-- Dependencias de javascript -->
+  <script src="./js/backend.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <!-- para la barra de navegacion izquierda -->
+  <script src="js/custom.js"></script> 
+</body>
+
+</html>

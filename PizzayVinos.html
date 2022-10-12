@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Logo.jpg">
+    <title>Pizzas y Vinos </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .columna {
+            float: left;
+            width: 33%;
+            padding-right: 5px;
+        }
+
+        .fila::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            /* Para que sea responsiva 
+             object-fit dejamnos las img de un solo tamaño 
+             y con el height: y width: le decimos que se adapte al tamaño del contenedor */
+            
+            height: 450px;
+            width: 450px;
+            object-fit: cover;
+        }
+
+        p {
+            text-align: center;
+            color: orange;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: orange;
+            /* color: black; */
+            color: white;
+            font-style: normal;
+            font-size: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pizzas</h1>
+    <div class="fila">
+        <div class="columna">
+            <img src="./img/carnesvegetariana.jpg">
+            <p>Carnes frias/Vegetariana</p>
+        </div>
+        <div class="columna">
+            <img src="./img/camaron.jpg">
+            <p>Camaron</p>
+        </div>
+        <div class="columna">
+            <img src="./img/pizzaCerveza.jpg">
+            <p>4 Estaciones</p>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="columna">
+            <img src="./img/4 quesos.jpg">
+            <p>4 Quesos</p>
+        </div>
+        <div class="columna">
+            <img src="./img/peperoni.jpg">
+            <p>Peperoni</p>
+        </div>
+        <div class="columna">
+            <img src="./img/margarita.jpg">
+            <p>Margarita</p>
+        </div>
+    </div>
+
+    <h1>Vinos</h1>
+    <div class="fila">
+        <div class="columna">
+            <img src="./img/vinoTinto.jpg">
+            <p>Vino seleccion chilena </p>
+        </div>
+        <div class="columna">
+            <img src="./img/BotellasVino.jpg">
+            <p>Botellas de vino</p>
+        </div>
+        <div class="columna">
+            <img src="./img/vinoRosa.jpg">
+            <p>Vino Rosa</p>
+        </div>
+
+        <div class="columna">
+            <img src="./img/vinoNombre.jpg">
+            <p>Vino 4 soles</p>
+        </div>
+        <div class="columna">
+            <img src="./img/casillero.jpg">
+            <p>Casillero</p>
+        </div>
+
+        <div class="columna">
+            <img src="./img/chilensis.jpg">
+            <p>Chilensis</p>
+        </div>
+    </div>
+
+</body>
+</html>

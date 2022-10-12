@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Logo.jpg">
+    <title>Decoraciones </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .columna {
+            float: left;
+            width: 33%;
+            padding-right: 5px;
+        }
+        /* clase para el video */
+        .center { 
+            margin: auto; width: 500px;
+        }
+
+        .fila::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            /* Para que sea responsiva 
+             object-fit dejamnos las img de un solo tamaño 
+             y con el height: y width: le decimos que se adapte al tamaño del contenedor */        
+            height: 450px;
+            width: 450px;
+            object-fit: cover;
+        }
+
+        p {
+            text-align: center;
+            color: orange;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: orange;
+            /* color: black; */
+            color: white;
+            font-style: normal;
+            font-size: 65px;
+        }
+        .otro {
+            text-align: center;
+            color:white;
+            font-style: normal;
+            font-size: 25px;
+        }
+        .button2{
+            background-color: orange;
+            color: black;
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer; 
+            position:relative;
+            top:42%; 
+            left:42%;
+        }
+
+        button{
+            background-color: orange;
+            color: black;
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer; 
+            position:relative;
+            top:42%; 
+            left:42%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Decoraciones Romanticas</h1>
+    <div class="fila">
+        <div class="columna">
+            <img src="./img/romanticaActual.jpg">
+            <p>Romantica</p>
+        </div>
+        <div class="columna">
+            <img src="./img/romanticaBlanca.jpg">
+            <p>Romantica</p>
+        </div>
+        <div class="columna">
+            <img src="./img/aniversario.jpg">
+            <p>Aniversario</p>
+        </div>
+        <div class="columna">
+            <img src="./img/notas.jpg">
+            <p>Con Notas</p>
+        </div>
+        <div class="columna">
+            <img src="./img/petalos.jpg">
+            <p>Petalos</p>
+        </div>
+        <div class="columna">
+            <img src="./img/romanticaCercas.jpg">
+            <p>Romantica</p>
+        </div>
+        <div class="columna">
+            <img src="./img/globos.jpg">
+            <p>Aniversario</p>
+        </div>
+        <div class="columna">
+            <img src="./img/banquita.jpg">
+            <p>Banca Romantica</p>
+        </div>
+        <div class="columna">
+            <img src="./img/familia.jpg">
+            <p>Familiar</p>
+        </div>
+
+
+        <div class="center">
+            <video src="./img/14febrero.mp4" width="auto" height="auto" controls
+              autoplay muted loop></video>
+            <p>14 de Febrero</p>
+        </div>
+    </div>
+
+    <h1>Decoracion Boda</h1>
+    <div class="fila">
+        <div class="columna">
+            <img src="./imgFiestaBoda/altar.jpeg">
+            <p>Altar</p>
+        </div>
+        <div class="columna">
+            <img src="./imgFiestaBoda/WhatsApp Image 2022-06-06 at 2.05.44 PM.jpeg">
+            <p>Boda</p>
+        </div>
+        <div class="columna">
+            <img src="./imgFiestaBoda/1.jpeg">
+            <p>Boda</p>
+        </div>
+        <div class="columna">
+            <img src="./imgFiestaBoda/2.jpeg">
+            <p>Boda</p>
+        </div>
+        <div class="columna">
+            <img src="./imgFiestaBoda/camino.jpeg">
+            <p>Camino</p>
+        </div>
+        <div class="columna">
+            <img src="./imgFiestaBoda/quesos.jpeg">
+            <p>Tabla de Quesos</p>
+        </div>
+    </div>
+
+    
+
+</body>
+<script src="./js/BackendDelete.js"></script>
+<script src="./js/backendGet.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</html>

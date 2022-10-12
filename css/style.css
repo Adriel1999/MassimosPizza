@@ -1,0 +1,288 @@
+body {
+	font-size: 15px;
+    line-height: 1.52;
+    color: #717f86;
+    font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden; 
+}
+/* Quitarle los estilos alas listas */
+ol, ul {
+	list-style: none;
+}
+/************************Aqui empieza la seccion de Banner***************************/
+/* imagen de fondo */
+#banner{
+    background: url(../img/2pizzaspeke.png) center top;
+    background-size: auto; 
+}
+
+/*esto sirve para que el color de la imagen de alfondo disminuya sus colores*/
+.bg-color{
+    background-color: RGBA(0, 0, 0, 0.61);
+    min-height: 630px;
+}
+/*Le cabiamos el estilo de letra al titulo*/
+.logo-name{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 65px;
+    margin-top: 140px;
+    color: #FFB03B;
+} 
+/*Le cabiamos el estilo de letra al subtitulo*/
+#banner h2{
+    font-family: 'Satisfy', sans-serif;
+    font-size: 45px;
+    color: #FFB03B;
+}
+#banner p{
+    font-family: 'PT Sans', sans-serif;
+    color: #fcfcfc;
+    font-size: 34px;
+}
+.section-padding{
+    padding: 60px 0px;
+}
+
+/*Estilo para la Barra de navegacion*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+/*Modelos de las palabras color gris y uno abajo de otro*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+/*Para cuando pasen el maus por encima cambie de color*/
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* para que nuestra barra de navegacion tenga color y cuando pasen el maus arriva haga un efecto */
+.menu-icon
+{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+} 
+
+/************************Aqui empieza la seccion de informacion***************************/
+/* Cambiamos de color y estilo nuetro h(titulo)*/
+.header-h {
+    color: #FFB03B;
+    font-size: 46px;
+    font-family: 'Satisfy', sans-serif;
+}
+/* Cambiamos de color y tamaño el parrafo*/
+.header-p {
+    color: #9699a6;
+    font-size: 16px;
+}
+.msg-row {
+    margin-top: 56px;
+}
+/*Estilo de subtema*/
+.heading{
+    font-family: 'Satisfy', sans-serif;
+    color: #FFB03B;
+    font-size: 24px;
+}
+.marb-35{
+    margin-bottom: 35px;
+}
+
+/*Estilo de las lista*/
+.details-list{
+    margin-top: 20px;
+}
+.details-list ul li i {
+    margin-right: 10px;
+    color: #ffb03b;
+}
+/* estilo de borde de la imagen que esta en seccion informacion */
+#about img
+{
+    border: 5px solid rgb(255, 176, 59);
+    border-radius: 2px;
+}
+/************************Aqui empieza la seccion de Reservar Mesa***************************/
+/* Color y formato a el circulo en donde esta el icono de numero telefonico */
+.bg-1 {
+    background-color: #fecc17;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+/* Color y formato a el circulo en donde esta el icono de horaio de servicio */
+.bg-14 {
+    background-color: #ccdb38;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+}
+/* Bloque para Estilo del icono telefono y horario*/
+.phone-in-talk, .hour-icon
+{
+    font-size: 35px;
+    line-height: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.media-body {
+    margin-left: 20px;
+    padding-left: 13px;
+}
+
+.media-2 {
+    margin-top: 30px;
+} 
+
+
+/* Epacio entre cajas del formulario */
+.contact-form {
+    margin: 8px 0 9px ;
+    padding-bottom: 10px;
+}
+
+/* Etilo de la caja de reservacion(Mensaje que puede dejar) */
+.contact-form textarea.form-control {
+    height: auto;
+}
+
+/* Estilo del boton Reserve su mesa  */
+.contacts-btn {
+    background-color:  #FFB03B !important;
+    color: #eeecec !important;
+    width: 170px;
+    height: 54px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    border: 0px;
+    color: #000 !important;
+}
+.centroBoton{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Centrar el Gps  */
+iframe{
+    position:relative;
+    top:21%; 
+    left:21%;
+}
+
+/**********************Termina bloque/******************
+
+/******************************Pie de Pagina******************************/
+.footer {
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    z-index: 1;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .footer-top {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+}
+.footer .widget-title, .footer .widget-title a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: #999;
+}
+.footer .widget-title{
+    padding-bottom: 20px;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 44px;
+    color: #FFB03B;
+}
+.footer .widget, .footer address {
+    color: #999;
+    text-transform: none;
+    font-style: normal;
+    padding-bottom: 15px;
+}
+.footer .navigation, .footer .social-list {
+    float: none;
+    margin-bottom: 20px;
+}
+.list-horizontal li {
+    display: inline-block;
+}
+#contact{
+    background-color: rgba(221, 221, 221, 0.33);
+}
+.footer .social-list a {
+    font-size: 32px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .content-holder h2 {
+        font-size: 23px;
+    }
+    .details-text p {
+        line-height: 16.6px;
+    }
+}
+@media (min-width: 451px) and (max-width: 767px) {
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #ff5e13;
+    }
+}
+@media (min-width: 20px) and (max-width: 450px) {
+    .menu-restaurant {
+    width: 100%;
+    }
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #a841a8;
+    }
+    .header-h {
+        font-size: 35px;
+    }
+    .header-p, body{
+        font-size: 14px;
+    }
+    .about-info, .mr-15{
+        margin-bottom: 15px;
+    }
+    #banner h2{
+        font-size: 25px;
+    }
+    #banner p{
+        font-size: 25px;
+    }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
